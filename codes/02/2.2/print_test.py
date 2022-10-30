@@ -13,6 +13,9 @@
 #                                                                       #
 # <br>Date:                                                             #
 #########################################################################
+# 默认值:            空格隔开   输出换行   屏幕输出(import sys)控制输出缓存(保持False获得较好性能)
+# print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
 user_name = 'Charlie'
 user_age = 8
 # 同时输出多个变量和字符串
