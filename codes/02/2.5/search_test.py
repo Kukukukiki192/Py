@@ -13,21 +13,22 @@
 #                                                                       #
 # <br>Date:                                                             #
 #########################################################################
-ac1 = 3 + 0.2j
-print(ac1)
-print(type(ac1))  # 输出 complex类型
-ac2 = 4 - 0.1j
-print(ac2)
-# 复数运行
-print(ac1 + ac2)  # 输出 (7+0.1j)
-# 导入cmatch模块
-import cmath
-
-# sqrt()是cmath模块下的函数，用于计算平方根
-ac3 = cmath.sqrt(-1)
-print(ac3)  # 输出 1j
-print(dir(cmath))  # 查看复数计算函数
-
-ac4 = 2 + 3j
-ac5 = 3.3 - 2.3j
-print(ac4 + ac5)  # 计算机底层浮点数精度丢失忽略不计(5.3+0.7000000000000002j)
+print(help(str.replace))
+s = 'crazyit.org is a good site'
+# 判断s是否以crazyit开头
+print(s.startswith('crazyit'))
+# 判断s是否以site结尾
+print(s.endswith('site'))
+# 查找s中'org'的出现位置
+print(s.find('org'))  # 8
+# 从索引为9处开始查找'org'的出现位置
+print(s.find('org', 9))  # -1:Return -1 on failure.
+# 从索引为9处开始查找'org'的出现位置
+# print(s.index('org', 9)) # 引发错误:Raises ValueError when the substring is not found.
+# 将字符串中所有it替换成xxxx
+print(s.replace('it', 'xxxx'))
+# 将字符串中1个it替换成xxxx
+print(s.replace('it', 'xxxx', 1))
+# 定义替换表：97（a）->945（α）,98（b）->945（β）,116（t）->964（τ）,
+table = {97: 945, 98: 946, 116: 964}
+print(s.translate(table))  # crαzyiτ.org is α good siτe

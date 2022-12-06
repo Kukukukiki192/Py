@@ -33,7 +33,7 @@ num2 = 30
 print("num2 is: %06d" % num2)
 # 最小宽度为6，左边补0，总带上符号
 print("num2 is: %+06d" % num2)
-# 最小宽度为6，右对齐
+# 最小宽度为6，左对齐
 print("num2 is: %-6d" % num2)
 
 # 转换浮点数

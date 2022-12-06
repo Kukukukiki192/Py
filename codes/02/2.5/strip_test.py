@@ -13,21 +13,19 @@
 #                                                                       #
 # <br>Date:                                                             #
 #########################################################################
-ac1 = 3 + 0.2j
-print(ac1)
-print(type(ac1))  # 输出 complex类型
-ac2 = 4 - 0.1j
-print(ac2)
-# 复数运行
-print(ac1 + ac2)  # 输出 (7+0.1j)
-# 导入cmatch模块
-import cmath
-
-# sqrt()是cmath模块下的函数，用于计算平方根
-ac3 = cmath.sqrt(-1)
-print(ac3)  # 输出 1j
-print(dir(cmath))  # 查看复数计算函数
-
-ac4 = 2 + 3j
-ac5 = 3.3 - 2.3j
-print(ac4 + ac5)  # 计算机底层浮点数精度丢失忽略不计(5.3+0.7000000000000002j)
+s = '  this is a puppy  '
+# 删除左边的空白
+print(s.lstrip())
+# 删除右边的空白
+print(s.rstrip())
+# 删除两边的空白
+print(s.strip())
+# 再次输出s，将会看到s并没有改变
+print(s)
+s2 = 'i think it is a scarecrow'
+# 删除左边的i、t、o、w字符
+print(s2.lstrip('itow'))
+# 删除右边的i、t、o、w字符
+print(s2.rstrip('itow'))
+# 删除两边的i、t、o、w字符
+print(s2.strip('itow'))

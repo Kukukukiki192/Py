@@ -13,21 +13,17 @@
 #                                                                       #
 # <br>Date:                                                             #
 #########################################################################
-ac1 = 3 + 0.2j
-print(ac1)
-print(type(ac1))  # 输出 complex类型
-ac2 = 4 - 0.1j
-print(ac2)
-# 复数运行
-print(ac1 + ac2)  # 输出 (7+0.1j)
-# 导入cmatch模块
-import cmath
-
-# sqrt()是cmath模块下的函数，用于计算平方根
-ac3 = cmath.sqrt(-1)
-print(ac3)  # 输出 1j
-print(dir(cmath))  # 查看复数计算函数
-
-ac4 = 2 + 3j
-ac5 = 3.3 - 2.3j
-print(ac4 + ac5)  # 计算机底层浮点数精度丢失忽略不计(5.3+0.7000000000000002j)
+s = 'crazyit.org is a good site'
+print(help(str.split))
+# 使用空白对字符串进行分割
+print(s.split()) # 输出 ['crazyit.org', 'is', 'a', 'good', 'site']
+# 使用空白对字符串进行分割,最多只分割前2个单词
+print(s.split(None, 2)) # 输出 ['crazyit.org', 'is', 'a good site']
+# 使用点进行分割
+print(s.split('.')) # 输出 ['crazyit', 'org is a good site']
+mylist = s.split()
+# 使用'/'为分割符，将mylist连接成字符串
+print(help(str.join))
+print('/'.join(mylist)) # 输出 crazyit.org/is/a/good/site
+# 使用','为分割符，将mylist连接成字符串
+print(','.join(mylist)) # 输出 crazyit.org,is,a,good,site
