@@ -14,7 +14,7 @@
 # <br>Date:                                                             #
 #########################################################################
 price = 108
-print("the book's price is %x" % price) # price以16进制显示?
+print("the book's price is %x" % price)  # price以16进制显示?
 user = "Charli"
 age = 8
 # 格式化字符串有两个占位符，第三部分提供2个变量
@@ -26,6 +26,8 @@ print("num is: %6o" % num)
 print("num is: %6x" % num)
 print("num is: %6X" % num)
 print("num is: %6s" % num)
+# print("num is: %6b" % num)  # 字符串格式化不支持二进制形式输出,只能用bin()转换
+print("num is:" + bin(num))
 
 # 默认转换后字符串右对齐,不到宽度左边补空格;最小宽度前标志可同时存在
 num2 = 30
@@ -46,6 +48,6 @@ print("my_value is: %08.3f" % my_value)
 print("my_value is: %+08.3f" % my_value)
 the_name = "Charlie"
 # 只保留3个字符
-print("the name is: %.3s" % the_name) # 输出Cha
+print("the name is: %.3s" % the_name)  # 输出Cha
 # 只保留2个字符，最小宽度10
 print("the name is: %10.2s" % the_name)
